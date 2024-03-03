@@ -3,7 +3,7 @@ on: [push]
 jobs:
   build: k6 load test
   runs-on: ubuntu-latest
-  step:
+  steps:
     - name: step 1 - checkout
       uses: actions/checkout@v4
 
