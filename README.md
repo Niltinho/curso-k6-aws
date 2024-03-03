@@ -1,1 +1,0 @@
-# curso-k6-aws
