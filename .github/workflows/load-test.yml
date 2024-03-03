@@ -10,13 +10,13 @@ jobs:
 
         name: step 2 - run k6 load test
           uses: grafana/k6-action@v0.3.1
-        with:
-          filename: scripts/test.js
+          with:
+            filename: scripts/test.js
 
         run: ls & mkdir report & mv index.html report
       
        name: step 4 - upload artifact
         uses: actions/upload-artifact@v4
-        with:
-          name: relatorio de testes de performance
-          path: report
+          with:
+            name: relatorio de testes de performance
+            path: report
